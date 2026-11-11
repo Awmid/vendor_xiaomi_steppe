@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * All rights reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<QapeBoostConfigs>
+    <QapePerfBoost>
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT -->
+        <Config
+            Id="0x1" Package="com.pubg.imobile" Enable="true" Timeout="0" Target="malabar" Fps="40"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40808100, 1632000, 0x4080c100, 1958400, 0x40808000, 1785600, 0x4080c000, 2400000, 0X42804000, 2, 0x43020000, 30" />
+
+        <!-- Fortnite 30FPS Profile-->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRANGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LITTLE -->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_BIG -->
+        <Config
+            Id="0x1" Package="com.epicgames.fortnite" Enable="true" Timeout="0" Target="malabar" Fps="30"
+            Resources="0X43C18000, 3, 0x63C64000, 2, 60000, 300000, 0x43C84000, 2, 0x63C5C100, 20, 0, 1804800, 1, 1804800, 2, 1804800, 3, 1804800, 4, 1804800, 5, 1804800, 6, 1804800, 7, 1804800, 8, 1632000, 9, 1632000,
+            0x63C5C000, 20, 0, 2054400, 1, 2054400, 2, 2054400, 3, 2054400, 4, 2054400, 5, 2054400, 6, 2054400, 7, 2054400, 8, 2054400, 9, 2054400" />
+
+        <!-- Game Play Specific Profiles for malabar -->
+        <!-- Minimalistic Jank Rescuer Profiles-->
+        <!-- CPU_BIG_MIN_FREQ, CPU_PRIME_MIN_FREQ, PRIME_SMART_FREQ_UNCAP-->
+        <!-- Reference Minimalistic jnak profiles (disabled)-->
+        <!-- Config
+            Id="0x1" Package="example.game.package" Enable="true" Timeout="0" Target="malabar" Fps="120"
+            Resources="<opcode1>, <value1>, <opcode2>, <value2>,... <opcodeN>, <valueN>" /-->
+
+        <!-- Game Play Generic Profiles for malabar-->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_MANY_WAKEUP_THRESHOLD -->
+        <!-- MPCTLV3_SCHED_PIPELINE_UTIL_THRES -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x1" Enable="true" Timeout="0" Target="malabar" Class="0"
+            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x40818000, 960,
+            0x40C9C000, 4, 0X43C34000, 250,
+            0x4080C000, 2304000, 0x40808000, 134400, 0X42804000, 4" />
+
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_MANY_WAKEUP_THRESHOLD -->
+        <!-- MPCTLV3_SCHED_PIPELINE_UTIL_THRES -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x1" Enable="true" Timeout="0" Target="malabar" Class="1"
+            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x40818000, 1075,
+            0x40C9C000, 4, 0X43C34000, 250,
+            0x4080C000, 2400000, 0x40808000, 1344000, 0X42804000, 4" />
+
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_UTIL_THRES -->
+        <!-- MPCTLV3_SCHED_MANY_WAKEUP_THRESHOLD -->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_LITTLE resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_LITTLE resource opcode, value-->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x1" Enable="true" Timeout="0" Target="malabar" Class="2"
+            Resources="0x43C6C000, 1, 0x43C40000, 0, 0x40818000, 1497, 0X43C34000, 250, 0x40C9C000, 4,
+            0x4080C000, 2611200, 0x4080C100, 1958400, 0x40808000, 1497600, 0x40808100, 1286400, 0X42804000, 4" />
+
+        <Config
+            Id="0x1" Package="com.pubg.imobile" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 2, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 1478, 0x41440100, 80, 0x40818000, 1497, 0x41440000, 80,
+            0x4080C100, 1958400, 0x40808100, 1632000, 0x4080C000, 2208000, 0x40808000, 1900800, 0X42804000, 4" />
+
+        <Config
+            Id="0x8" Package="com.pubg.imobile" Enable="true" Timeout="2" Target="malabar" Fps="60" GFRLevel="-1"
+            Resources="0X42804000, 2, 0x40808100, 2092800, 0x40808000, 2400000" />
+        <Config
+            Id="0x8" Package="com.pubg.imobile" Enable="true" Timeout="11" Target="malabar" Fps="60" GFRLevel="1"
+            Resources="0X42804000, 2, 0x40808100, 2092800, 0x40808000, 2400000" />
+        <Config
+            Id="0x8" Package="com.pubg.imobile" Enable="true" Timeout="11" Target="malabar" Fps="60" GFRLevel="2"
+            Resources="0X42804000, 2, 0x40808100, 2092800, 0x40808000, 2400000" />
+        <Config
+            Id="0x8" Package="com.pubg.imobile" Enable="true" Timeout="200" Target="malabar" Fps="60" GFRLevel="3"
+            Resources="0X42804000, 2, 0x40808100, 2092800, 0x40808000, 2400000" />
+
+        <!-- MLBB 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRANGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_LITTLE -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x1" Package="com.mobiin.gp" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x63C64000, 2, 60000, 300000, 0x43C84000, 2,
+            0x6081C100, 4, 1094400, 95, 1804800, 90, 0x6081C000, 4, 1497600, 95, 1900800, 90,
+            0x4080C100, 1958400, 0x40808100, 1632000, 0x4080C000, 2208000, 0x40808000, 1900800, 0X42804000, 4" />
+
+        <!-- MLBB 90 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRANGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_LITTLE -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x1" Package="com.mobiin.gp" Enable="true" Timeout="0" Target="malabar" Fps="90"
+            Resources="0X43C18000, 3, 0x63C64000, 2, 60000, 300000, 0x43C84000, 2,
+            0x6081C100, 4, 1094400, 95, 1804800, 90, 0x6081C000, 4, 1497600, 95, 2054400, 90,
+            0x4080C100, 2092800, 0x40808100, 1804800, 0x4080C000, 2400000, 0x40808000, 2054400, 0X42804000, 2" />
+
+        <!-- Free Fire Max 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRANGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_LITTLE -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT -->
+        <Config
+            Id="0x1" Package="com.dts.freefiremax" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x63C64000, 2, 60000, 300000, 0x43C84000, 2,
+            0x6081C100, 4, 1286400, 95, 1958400, 90, 0x6081C000, 4, 1651200 , 95, 2208000, 90,
+            0x4080C100, 1804800, 0x40808100, 1478400, 0x4080C000, 1900800, 0x40808000, 1497600,
+            0x43020000, 88" />
+
+        <!-- GFR Profiles -->
+        <!-- MLBB 60 and 90 FPS -->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LITTLE -->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_BIG -->
+        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
+        <Config
+            Id="0x8" Package="com.mobiin.gp" Enable="true" Timeout="2" Target="malabar" Fps="60,90" GFRLevel="-1"
+            Resources="0x63C5C100, 22, 0, 2092800, 1, 2092800, 2, 2092800, 3, 2092800, 4, 2092800, 5, 2092800, 6, 2092800, 7, 2092800, 8, 2092800, 9, 2092800, 10, 2092800,
+            0x63C5C000, 22, 0, 2400000, 1, 2400000, 2, 2400000, 3, 2400000, 4, 2400000, 5, 2400000, 6, 2400000, 7, 2400000, 8, 2400000, 9, 2400000, 10, 2400000,
+            0X42804000, 2" />
+        <Config
+            Id="0x8" Package="com.mobiin.gp" Enable="true" Timeout="11" Target="malabar" Fps="60,90" GFRLevel="1"
+            Resources="0x63C5C100, 22, 0, 2092800, 1, 2092800, 2, 2092800, 3, 2092800, 4, 2092800, 5, 2092800, 6, 2092800, 7, 2092800, 8, 2092800, 9, 2092800, 10, 2092800,
+            0x63C5C000, 22, 0, 2400000, 1, 2400000, 2, 2400000, 3, 2400000, 4, 2400000, 5, 2400000, 6, 2400000, 7, 2400000, 8, 2400000, 9, 2400000, 10, 2400000,
+            0X42804000, 2" />
+        <Config
+            Id="0x8" Package="com.mobiin.gp" Enable="true" Timeout="11" Target="malabar" Fps="60,90" GFRLevel="2"
+            Resources="0x63C5C100, 22, 0, 2092800, 1, 2092800, 2, 2092800, 3, 2092800, 4, 2092800, 5, 2092800, 6, 2092800, 7, 2092800, 8, 2092800, 9, 2092800, 10, 2092800,
+            0x63C5C000, 22, 0, 2400000, 1, 2400000, 2, 2400000, 3, 2400000, 4, 2400000, 5, 2400000, 6, 2400000, 7, 2400000, 8, 2400000, 9, 2400000, 10, 2400000,
+            0X42804000, 2" />
+        <Config
+            Id="0x8" Package="com.mobiin.gp" Enable="true" Timeout="200" Target="malabar" Fps="60,90" GFRLevel="3"
+            Resources="0x63C5C100, 22, 0, 2092800, 1, 2092800, 2, 2092800, 3, 2092800, 4, 2092800, 5, 2092800, 6, 2092800, 7, 2092800, 8, 2092800, 9, 2092800, 10, 2092800,
+            0x63C5C000, 22, 0, 2400000, 1, 2400000, 2, 2400000, 3, 2400000, 4, 2400000, 5, 2400000, 6, 2400000, 7, 2400000, 8, 2400000, 9, 2400000, 10, 2400000,
+            0X42804000, 2" />
+
+        <ApiProfiles Enable="true" Target="malabar">
+            <LOAD_RATE_CPU>0x40C68000, 0, 0x40C68100, 0</LOAD_RATE_CPU>
+            <LOAD_RATE_MEM>0x43488000, 0x40BE38</LOAD_RATE_MEM>
+            <HIGH_CPU_UTIL>0x40C80000, 0</HIGH_CPU_UTIL>
+            <LOW_LAT>0x40CD0000, 0</LOW_LAT>
+            <LOW_CPU_UTIL>0x42C2C000, 0</LOW_CPU_UTIL>
+            <THREAD_PIPELINE>0x42C30000, 0</THREAD_PIPELINE>
+            <CONTENT_FPS>0x42C3C000, 0</CONTENT_FPS>
+            <PIPELINE_NUMBER>0X43C18000, 0</PIPELINE_NUMBER>
+            <AUTO_PIPELINE>0X43C34000, 350</AUTO_PIPELINE>
+        </ApiProfiles>
+
+        <!-- China Game Specific Profiles-->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="malabar" Fps="90"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x43C6C000, 1, 0x43C40000, 1024,
+            0x40808100, 1094400, 0x4080c100, 1632000, 0x40808000, 1497600, 0x4080c000, 2054400,
+            0x40818100, 672000, 0x40818000, 825600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x43C40000, 1024,
+            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 960000, 0x4080c000, 1785600,
+            0x40818100, 672000, 0x40818000, 825600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_UTIL_THRES -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="malabar" Fps="30"
+            Resources="0X43C18000, 2, 0X43C34000, 300, 0x43C40000, 1024" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="malabar" Fps="90"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 960000, 0x4080c000, 1785600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_LITTLE resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 2, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600, 0x63C64000, 2, 1000, 300000,
+            0x40814100, 806400, 0x40808100, 1094400, 0x4080c100, 1478400,
+            0x40814000, 960000, 0x40808000, 1651200, 0x4080c000, 2054400,
+            0x43C40000, 1024" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="malabar" Fps="40"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x63C64000, 2, 2000, 300000, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1286400, 0x40808000, 1190400, 0x4080c000, 1785600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="malabar" Fps="30"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x63C64000, 2, 2000, 300000, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1286400, 0x40808000, 1190400, 0x4080c000, 1651200" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.ig" Enable="true" Timeout="0" Target="malabar" Fps="60" TargetFps="50"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 1190400, 0x4080c000, 1785600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.ig" Enable="true" Timeout="0" Target="malabar" Fps="40"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1286400, 0x40808000, 1190400, 0x4080c000, 1651200" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <Config
+            Id="0x1" Package="com.tencent.ig" Enable="true" Timeout="0" Target="malabar" Fps="30"
+            Resources="0X43C18000, 2, 0x43C84000, 2" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.dfm" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600,
+            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 960000, 0x4080c000, 1785600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.dfm" Enable="true" Timeout="0" Target="malabar" Fps="40"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600, 0x63C64000, 2, 2000, 300000,
+            0x40808100, 672000, 0x4080c100, 1478400, 0x40808000, 960000, 0x4080c000, 1785600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
+        <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LITTLE -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.dfm" Enable="true" Timeout="0" Target="malabar" Fps="30"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
+            0x40818100, 672000, 0x40818000, 825600, 0x63C64000, 2, 2000, 300000,
+            0x40808100, 672000, 0x4080c100, 1286400, 0x40808000, 691200, 0x4080c000, 1497600" />
+
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT -->
+        <Config
+            Id="0x1" Package="com.tencent.tmgp.speedmobile" Enable="true" Target="malabar" Fps="120"
+            Resources="0x43c18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444100, 0,
+            0x6081C000, 2, 1958400, 85"/>
+
+        <!-- APP LAUNCH Specific Profiles-->
+        <!-- Config
+            Id="0x3" Package="example.game.package" Enable="true" Timeout="600" Target="malabar"
+            LaunchResources="<opcode1>, <value1>, <opcode2>, <value2>,... <opcodeN>, <valueN>" /-->
+
+        <!-- PERACTIVITYBOOST Profiles-->
+        <!-- Config
+            Id="0x5" Package="example.game.package/.sample.text" Enable="true" Timeout="0" Target="malabar"
+            PerActvtResources="<opcode1>, <value1>, <opcode2>, <value2>,... <opcodeN>, <valueN>" /-->
+
+        <!--Youtube 60fps profile -->
+        <!--MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LITTLE-->
+        <Config
+            Id="0x1" Package="com.google.android.youtube" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0x63C5C100, 22, 0, 1478400, 1, 1478400, 2, 1478400, 3, 1478400, 4, 1478400, 5, 1478400, 6, 1478400, 7, 1478400, 8, 1478400, 9, 1478400, 10, 1478400" />
+        <!-- MLBB 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <Config
+            Id="0x1" Package="com.mobile.legends" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1" />
+        <!-- Free Fire Max 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <Config
+            Id="0x1" Package="com.dts.freefireth" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1" />
+        <!-- LOL Max 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <Config
+            Id="0x1" Package="com.tencent.lolm" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1" />
+        <!-- com.garena.game.kgvn Max 60 FPS Profile -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <Config
+            Id="0x1" Package="com.garena.game.kgvn" Enable="true" Timeout="0" Target="malabar" Fps="60"
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1, 0x5FC00000, 0x3f" />
+     </QapePerfBoost>
+</QapeBoostConfigs>

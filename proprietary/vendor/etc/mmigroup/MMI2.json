@@ -1,0 +1,125 @@
+{
+	"itemConfig": [{
+			"showName": "VersionInfo"
+		},
+		{
+			"showName": "SimCard_HotPlug"
+		},
+		{
+			"showName": "Sdcard_Intent"
+		},
+		{
+			"showName": "KeyPad"
+		},
+		{
+			"showName": "TpOpenShort"
+		},
+		{
+			"showName": "LCD"
+		},
+		{
+			"showName": "TouchScreen"
+		},
+		{
+			"showName": "MainCamera"
+		},
+		{
+			"showName": "MainCamera_DarkState"
+		},
+		{
+			"showName": "FrontCamera"
+		},
+		{
+			"showName": "FrontCamera_DarkState"
+		},
+		{
+			"showName": "LightTEST"
+		},
+		{
+			"showName": "LED"
+		},
+		{
+			"showName": "CameraLightLeak"
+		},
+		{
+			"showName": "Charge"
+		},
+		{
+			"showName": "WlanAP"
+		},
+		{
+			"showName": "BluetoothDevice"
+		},
+		{
+			"showName": "GPS"
+		},
+		{
+			"showName": "OTG"
+		},
+		{
+			"showName": "Magnetic"
+		},
+		{
+			"showName": "Accelerometer",
+			"paramconfig": {
+				"support_calibrate": false,
+				"support_axialresult": true,
+				"support_angle45": true,
+				"support_angleneg45": true,
+				"is_auto_calibrate": false,
+				"support_plus_or_minus_45_degrees_either_pass_through": false,
+				"autoTest": {
+					"support_calibrate": false
+				}
+			}
+		},
+		{
+			"showName": "Gyroscope"
+		},
+		{
+			"showName": "Optical",
+			"paramconfig": {
+				"support_calibrate": false,
+				"support_test": true,
+				"is_auto_calibrate": false
+			}
+		},
+		{
+			"showName": "Optical_Back"
+		},
+		{
+			"showName": "TopSpeaker"
+		},
+		{
+			"showName": "BottomSpeaker"
+		},
+		{
+			"showName": "Receiver"
+		},
+		{
+			"showName": "MainMicToHeadPhone"
+		},
+		{
+			"showName": "HeadSet"
+		},
+		{
+			"showName": "FM"
+		},
+		{
+			"showName": "fingerprint",
+			"paramconfig": {
+				"support_enroll_test": true,
+				"auto_exit": false
+			}
+		},
+		{
+			"showName": "Vibrator"
+		},
+		{
+			"showName": "Sar"
+		},
+		{
+			"showName": "SIMCardTray"
+		}
+	]
+}

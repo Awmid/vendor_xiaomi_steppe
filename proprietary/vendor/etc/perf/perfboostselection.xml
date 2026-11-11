@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * All rights reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+<!--Ids are used in identifying the boosts, increment ids linearly,
+    do not modify Ids, or add in between-->
+<!--follow the number format rules while specifying number, can be given
+    in any format-->
+<BoostConfigs>
+    <PerfBoost>
+    <!-- LL Lite Base boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_LITTLE resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_LITTLE resource opcode, value-->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_LITTLE resource opcode, value -->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- LLCCBW resource opcode, value-->
+        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
+        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS resource opcode for gold, values-->
+        <!-- Type="1", main launch of 1sec -->
+        <Config
+            Id="0x00001083" Type="-1" Enable="true" Timeout="300000" Target="malabar"
+            Resources="0x4303C000, 2092000"
+            ResourcesCust=""
+            Applist="com.google.android.wvts,com.google.android.exoplayer.gts"/>
+    </PerfBoost>
+</BoostConfigs>
