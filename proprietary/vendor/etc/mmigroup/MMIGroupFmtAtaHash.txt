@@ -1,0 +1,6 @@
+MMIGroupFmtAta.json
+c334b22d540a835ed8d47625277d9ca9
+MMIGroupFmtAtaCamera.json
+a9dc953b213eb9a3ad4c74d858f16449
+MMIGroupFmtAtaCommon.json
+49fde3ccee0c1350b3621bd5e9574202

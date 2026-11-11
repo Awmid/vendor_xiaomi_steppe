@@ -1,0 +1,31 @@
+{
+	"itemConfig": [{
+			"showName": "Vibrator"
+		},
+		{
+			"showName": "BottomSpeaker"
+		},
+		{
+			"showName": "MainMicToHeadPhone"
+		},
+		{
+			"showName": "SimCard_HotPlug"
+		},
+		{
+			"showName": "Sdcard_Intent"
+		},
+		{
+			"showName": "Charge",
+			"paramconfig": {
+				"support_authen_check": false,
+				"ChargerCurrent": {
+					"min": -9999999,
+					"max": 9999999
+				}
+			}
+		},
+		{
+			"showName": "OTG"
+		}
+	]
+}

@@ -1,0 +1,143 @@
+{
+	"veri": {
+		"vericode": "10e916bf"
+	},
+	"version": {
+		"version": "1.0.0.2026060101_#24494-13"
+	},
+    "parameters": {
+		"front_parameters": {
+			"front_cap_parameters": {
+				"ABS_KEY_BASIC_SKIN_SOFTEN": {
+					"slider_mid":0,
+					"value_mid":0,
+					"value_max":50,
+					"male_ratio":0.8
+				},
+				"ABS_KEY_BASIC_DE_BLEMISH": {
+					"depend_key": "ABS_KEY_BASIC_SKIN_SOFTEN",
+					"slider_mid":40,
+					"value_mid":80,
+					"value_max":100,
+					"slider_mid_male":20,
+					"value_mid_male":40,
+					"value_max_male":40
+				},
+				"ABS_KEY_MAKEUP_BLUSH": {
+					"formula_ratio": 1,
+					"male_ratio": 0,
+					"is_makeup": 1
+				},
+				"ABS_KEY_BASIC_EYEBROW_DYEING": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0.8,
+					"is_makeup": 1
+				},
+				"ABS_KEY_MAKEUP_LIP_BEAUTY": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0.5,
+					"is_makeup": 1
+				},
+				"ABS_KEY_MAKEUP_EYE_SHADOW": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0,
+					"is_makeup": 1
+				}
+			},
+			"front_pre_parameters": {
+				"ABS_KEY_BASIC_SKIN_SOFTEN": {
+					"slider_mid":0,
+					"value_mid":0,
+					"value_max":70,
+					"male_ratio":0.8
+				},
+				"ABS_KEY_MAKEUP_BLUSH": {
+					"formula_ratio": 1,
+					"male_ratio": 0,
+					"is_makeup": 1
+				},
+				"ABS_KEY_BASIC_EYEBROW_DYEING": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0.8,
+					"is_makeup": 1
+				},
+				"ABS_KEY_MAKEUP_LIP_BEAUTY": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0.5,
+					"is_makeup": 1
+				},
+				"ABS_KEY_MAKEUP_EYE_SHADOW": {
+					"depend_key": "ABS_KEY_MAKEUP_BLUSH",
+					"formula_ratio": 1,
+					"male_ratio": 0,
+					"is_makeup": 1
+				}
+			}
+		},
+		"rear_parameters": {
+			"rear_slider_parameters": {
+				"rear_slider_cap_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":0,
+						"value_mid":0,
+						"value_max":85,
+						"male_ratio":1
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":80,
+						"value_max":100,
+						"male_ratio":0.9
+					}
+				},
+				"rear_slider_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":0,
+						"value_mid":0,
+						"value_max":75,
+						"male_ratio":1
+					}
+				}
+			},
+			"rear_portrait_parameters": {
+				"rear_portrait_cap_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":0,
+						"value_mid":0,
+						"value_max":85,
+						"male_ratio":1
+					},
+					"ABS_KEY_BASIC_DE_BLEMISH": {
+						"slider_mid":40,
+						"value_mid":80,
+						"value_max":100,
+						"male_ratio":0.9
+					}
+				},
+				"rear_portrait_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":0,
+						"value_mid":0,
+						"value_max":75,
+						"male_ratio":1
+					}
+				}
+			},
+			"rear_recording_slider_parameters": {
+				"rear_recording_slider_pre_parameters": {
+					"ABS_KEY_BASIC_SKIN_SOFTEN": {
+						"slider_mid":0,
+						"value_mid":0,
+						"value_max":75,
+						"male_ratio":1
+					}
+				}
+			}
+		}
+	}
+}

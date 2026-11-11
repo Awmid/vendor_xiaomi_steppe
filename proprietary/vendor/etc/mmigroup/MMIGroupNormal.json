@@ -1,0 +1,148 @@
+{
+	"mmigroupConfig": {
+		"hideDiskMountUi": true
+	},
+	"systemConfig": {
+		"Attestation": false,
+		"Widewine": false,
+		"IFAA_Version": false,
+		"FIDO_Version": false
+	},
+	"itemConfig": [{
+			"showName": "VersionInfo",
+			"paramconfig": {
+				"AddInfo": {
+					"SecureBoot": "any",
+					"//TPcolor": "any",
+					"CPUID": "any",
+					"TP": "any",
+					"RPMB": "any",
+					"CameraInfo": "any",
+					"BuildNumber": "any",
+					"BaseBandVersion": "any",
+					"KernelVersion": "any",
+					"LCM": "any",
+					"verifiedbootstate": "green",
+					"System_Verity": "true"
+				}
+			}
+		},
+		{
+			"showName": "SimCard_HotPlug"
+		},
+		{
+			"showName": "Sdcard_Intent"
+		},
+		{
+			"showName": "KeyPad",
+			"paramconfig": {
+				"keyCode": [
+					"VOLUME_UP",
+					"VOLUME_DOWN",
+					"POWER"
+				]
+			}
+		},
+		{
+			"showName": "TpOpenShort"
+		},
+		{
+			"showName": "LCD"
+		},
+		{
+			"showName": "TouchScreen"
+		},
+		{
+			"showName": "MainCamera"
+		},
+		{
+			"showName": "FrontCamera"
+		},
+		{
+			"showName": "LightTEST"
+		},
+		{
+			"showName": "LED"
+		},
+		{
+			"showName": "Charge"
+		},
+		{
+			"showName": "WlanAP"
+		},
+		{
+			"showName": "BluetoothDevice"
+		},
+		{
+			"showName": "GPS"
+		},
+		{
+			"showName": "OTG",
+			"paramconfig": {
+				"support_udisk": true,
+				"is_show_storage": true,
+				"support_typec": true,
+				"support_mouse": true
+			}
+		},
+		{
+			"showName": "Magnetic"
+		},
+		{
+			"showName": "Accelerometer",
+			"paramconfig": {
+				"support_calibrate": false
+			}
+		},
+		{
+			"showName": "Gyroscope"
+		},
+		{
+			"showName": "Optical"
+		},
+		{
+			"showName": "Optical_Back"
+		},
+		{
+			"showName": "TopSpeaker"
+		},
+		{
+			"showName": "BottomSpeaker"
+		},
+		{
+			"showName": "Receiver"
+		},
+		{
+			"showName": "MainMicToHeadPhone"
+		},
+		{
+			"showName": "HeadSet"
+		},
+		{
+			"showName": "FM",
+			"action": "com.mmigroup.action.ThreeAppTest"
+		},
+		{
+			"showName": "fingerprint",
+			"paramconfig": {
+				"support_enroll_test": true,
+				"auto_exit": false
+			}
+		},
+		{
+			"showName": "Vibrator",
+			"paramconfig": {
+				"is_auto_vibrate": false
+			}
+		},
+		{
+			"showName": "NFC"
+		},
+		{
+			"showName": "Sar"
+		},
+		{
+			"showName": "SIMCardTray"
+		}
+	]
+}

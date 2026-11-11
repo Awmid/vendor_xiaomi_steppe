@@ -1,0 +1,108 @@
+{
+  "config":{
+    "hw_platform": ["QRD"],
+    "platform_family": ["172"]
+  },
+  "sensor_devinfo": {
+    "owner": "NA",
+    ".gsensor_bma5":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_bma5_0.json.bma5_0_platform.accel.fac_cal.bias"
+	  },
+      "key": {"type": "str", "ver": "0",
+                   "data": "bma5_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".gsensor_mir3da":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_mir3da_0.json.mir3da_0_platform.accel.fac_cal.bias"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "mir3da_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".gsensor_bmi3x0":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_bmi3x0_0.json.bmi3x0_0_platform.accel.fac_cal.bias"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "bmi3x0_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".gsensor_icm4x6xa":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_icm4x6xa_0.json.icm4x6xa_0_platform.accel.fac_cal.bias"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "icm4x6xa_0_platform.accel.fac_cal.bias"
+      }
+    },
+    ".gyro_bmi3x0":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_bmi3x0_0.json.bmi3x0_0_platform.gyro.fac_cal.bias"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "bmi3x0_0_platform.gyro.fac_cal.bias"
+      }
+    },
+    ".gyro_icm4x6xa":{
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_icm4x6xa_0.json.icm4x6xa_0_platform.gyro.fac_cal.bias"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "icm4x6xa_0_platform.gyro.fac_cal.bias"
+      }
+    },
+    ".als_sip1328": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_sip1328_front_0.json.sip1328_platform.als.fac_cal"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "sip1328_platform.als.fac_cal"
+      }
+    },
+    ".als_hx322x": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_hx322x.json.hx322x_platform.als.fac_cal"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "hx322x_platform.als.fac_cal"
+      }
+    },
+    ".als_stk6a2x": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_stk6a2x_0.json.stk6a2x_0_platform.als.fac_cal"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "stk6a2x_0_platform.als.fac_cal"
+      }
+    },
+    ".sar_aw963xx0": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                    "data": "aldabra_aw963xx_0.json.aw963xx_0_sar.debug_config"
+      },
+      "key": {"type": "str", "ver": "0",
+                    "data": "aw963xx_0_sar.debug_config"
+      }
+    },
+    ".rear_als_sip1328_back": {
+      "owner": "NA",
+      "cal_path": {"type": "str", "ver": "0",
+                   "data": "aldabra_sip1328_back_0.json.sip1328_back_platform.als.fac_cal"
+      },
+      "key": {"type": "str", "ver": "0",
+                   "data": "sip1328_back_platform.als.fac_cal"
+      }
+    }
+  }
+}
