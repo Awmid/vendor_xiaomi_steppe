@@ -1,7 +1,3 @@
-<!--
-    Input:
-        vendor/qcom/proprietary/commonsys/qesdk-noship/qesdk_system_service/vendor.qti.qesdsys.service.xml
--->
 <manifest version="9.0" type="framework">
     <hal format="aidl">
         <name>vendor.qti.qesdsys</name>
