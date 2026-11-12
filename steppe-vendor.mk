@@ -1109,38 +1109,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n12.bin \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n13.bin \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n14.bin \
-    vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n15.bin \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/command-handlers/libQualcommProfilerClkSyncCommandHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/command-handlers/libQualcommProfilerClkSyncCommandHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/command-handlers/libQualcommProfilerEtmSyncCommandHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/command-handlers/libQualcommProfilerEtmSyncCommandHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/command-handlers/libQualcommProfilerGetQ6SyncCommandHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/command-handlers/libQualcommProfilerGetQ6SyncCommandHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/command-handlers/libQualcommProfilerHWInfoSyncCommandHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/command-handlers/libQualcommProfilerHWInfoSyncCommandHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/QualcommProfilerGpuProfilingRpcHandler:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/QualcommProfilerGpuProfilingRpcHandler \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerCpuHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerCpuHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerGpuProfilingHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerIoHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerIoHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerLaBwProfHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerLaBwProfHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerLaDdrNocProfHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerMemHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerMemHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerNetStatHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerNetStatHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerPowerHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerPowerHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerProcessHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerProcessHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerProcmemHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerProcmemHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerSysmonProfilingHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerSysmonStatsHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerSysmonStatsHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerThermalHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerThermalHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/handlers/libQualcommProfilerThreadProfilingHandler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/handlers/libQualcommProfilerThreadProfilingHandler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libDSPTestLA.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libDSPTestLA.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libGPUProf.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libGPUProf.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libProfileCMetaSharedLib.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libProfileCMetaSharedLib.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQCoreRpcClientSocketUtility.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQCoreRpcClientSocketUtility.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQRpcSocketUtility.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQRpcSocketUtility.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQualcommProfilerApi.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQualcommProfilerApi.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQualcommProfilerCore.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQualcommProfilerCore.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQualcommProfilerQLog.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQualcommProfilerQLog.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQualcommProfilerThreadProfiler.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQualcommProfilerThreadProfiler.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libQualcommProfilerTraceRouter.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libQualcommProfilerTraceRouter.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/libs/libsysmonapps.so:$(TARGET_COPY_OUT_VENDOR)/qprof/libs/libsysmonapps.so \
-    vendor/xiaomi/steppe/proprietary/vendor/qprof/verison.txt:$(TARGET_COPY_OUT_VENDOR)/qprof/verison.txt
+    vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n15.bin
 
 PRODUCT_PACKAGES += \
     graphicbuffersource-aidl-ndk \
@@ -2938,7 +2907,6 @@ PRODUCT_PACKAGES += \
     qmi_test_mt_client_init_instance \
     qmipriod \
     qms \
-    qprof \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
