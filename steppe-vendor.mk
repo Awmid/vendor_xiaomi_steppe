@@ -144,6 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
     vendor/xiaomi/steppe/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
@@ -2589,6 +2590,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.latency@2.2 \
     vendor.qti.latency@2.3 \
+    vendor.qti.qccsyshal_aidl-V1-ndk \
+    vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
@@ -2744,6 +2747,7 @@ PRODUCT_PACKAGES += \
     manifest_malabar.xml \
     vendor.qti.hardware.sigma_miracast.xml \
     vendor.qti.hardware.sigma_miracast_aidl.xml \
+    vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
     android.hardware.weaver.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
@@ -2999,6 +3003,8 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     dpmd \
+    qccsyshal@1.2-service \
+    qccsyshal_aidl-service \
     DFtool \
     fidoca \
     android.hardware.weaver \
