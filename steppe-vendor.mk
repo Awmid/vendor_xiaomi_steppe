@@ -139,14 +139,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/steppe/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
     vendor/xiaomi/steppe/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
-    vendor/xiaomi/steppe/proprietary/system/etc/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
-    vendor/xiaomi/steppe/proprietary/system/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast_aidl-service.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/xiaomi/steppe/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/xiaomi/steppe/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
@@ -1112,18 +1115,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n15.bin
 
 PRODUCT_PACKAGES += \
-    graphicbuffersource-aidl-ndk \
-    libaconfig_storage_read_api_cc \
     libdolbyproxyandroid \
     libdolbyui \
-    libmedia_codeclist \
-    libmedia_codeclist_capabilities \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefright_codecbase \
-    libstagefright_framecapture_utils \
-    libstagefright_graphicbuffersource_aidl \
-    libstagefright_surface_utils \
     vendor.qti.diaghal-V1-ndk \
     vendor.qti.hardware.data.connectionaidl-V1-ndk \
     vendor.qti.hardware.fm-V1-ndk \
@@ -1466,6 +1459,7 @@ PRODUCT_PACKAGES += \
     libbpf_minimal \
     libbt-hidlclient \
     libbtnv \
+    libc++_shared \
     libcacertclient \
     libcamera2ndk_vendor \
     libcamera_nn_stub \
@@ -2266,7 +2260,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.0 \
     vendor.qti.hardware.servicetracker@1.1 \
     vendor.qti.hardware.servicetrackeraidl-V1-ndk \
-    vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
+    vendor.qti.hardware.sigma_miracast_aidl-V1-ndk_vendor \
     vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.systemhelper@1.0 \
     vendor.qti.hardware.systemhelperaidl-V1-ndk \
@@ -2279,7 +2273,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.wifi.supplicant-V1-ndk \
     vendor.qti.hardware.wifi.wifilearner@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.hardware.wigig.netperftuner@1.0_vendor \
     vendor.qti.ims.callcapability@1.0_vendor \
@@ -2383,13 +2377,17 @@ PRODUCT_PACKAGES += \
     libmmrtpencoder \
     libqcc_file_agent_sys \
     libsigmautils \
+    libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
     libwfdconfigutils \
     libwfddisplayconfig \
     libwfdmminterface \
     libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdnative \
     libwfdrtsp \
+    libwfdservice \
     libwfdsinksm \
     libwfduibcinterface \
     libwfduibcsink \
@@ -2522,12 +2520,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.seccam@1.0 \
     vendor.qti.hardware.sigma_miracast@1.0-halimpl \
     vendor.qti.hardware.sigma_miracast@1.0 \
+    vendor.qti.hardware.sigma_miracast_aidl-V1-ndk \
+    vendor.qti.hardware.sigma_miracast_aidl-halimpl \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.trustedui@1.0 \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
     vendor.qti.hardware.wigig.supptunnel@1.0 \
     vendor.qti.ims.callcapability@1.0 \
@@ -2622,6 +2623,7 @@ PRODUCT_PACKAGES += \
     WfdService \
     ims \
     qcrilmsgtunnel \
+    WfdCommon \
     ImsRtpService-aidl.xml \
     Manifest_IAGM.xml \
     Manifest_IListenSoundModel.xml \
@@ -2970,6 +2972,9 @@ PRODUCT_PACKAGES += \
     dpmd \
     qccsyshal@1.2-service \
     qccsyshal_aidl-service \
+    sigma_miracasthalservice64 \
+    sigma_miracasthalservice_aidl \
+    wfdservice64 \
     fidoca \
     android.hardware.weaver \
     vendor.xiaomi.hardware.mediaeventgatherservice-service \
@@ -2986,6 +2991,10 @@ PRODUCT_PACKAGES += \
     vsimd
 
 PRODUCT_PACKAGES += \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
