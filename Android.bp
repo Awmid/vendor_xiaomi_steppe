@@ -5,61 +5,13 @@
 soong_namespace {
     imports: [
         "device/xiaomi/steppe",
+        "hardware/qcom-caf/sm8750",
         "hardware/qcom-caf/wlan",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
     ],
-}
-
-cc_prebuilt_library_shared {
-    name: "graphicbuffersource-aidl-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/graphicbuffersource-aidl-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libnativewindow",
-                "android.hardware.graphics.common-V6-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaconfig_storage_read_api_cc",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libaconfig_storage_read_api_cc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -114,253 +66,6 @@ cc_prebuilt_library_shared {
                 "libvndksupport",
                 "android.hardware.graphics.common-V6-ndk",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libmedia_codeclist.so",
-            ],
-            shared_libs: [
-                "android.hardware.media.omx@1.0",
-                "libbinder",
-                "liblog",
-                "libmedia_codeclist_capabilities",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist_capabilities",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libmedia_codeclist_capabilities.so",
-            ],
-            shared_libs: [
-                "libaconfig_storage_read_api_cc",
-                "libbinder",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_aidl_bufferpool2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_aidl_bufferpool2.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.media.bufferpool2-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_codecbase",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_codecbase.so",
-            ],
-            shared_libs: [
-                "android.hardware.cas.native@1.0",
-                "android.hardware.drm@1.0",
-                "libaudioutils",
-                "libgui",
-                "libhidlallocatorutils",
-                "liblog",
-                "libmedia_codeclist",
-                "libmedia_omx",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_framecapture_utils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_framecapture_utils.so",
-            ],
-            shared_libs: [
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libbase",
-                "libcutils",
-                "libgui",
-                "liblog",
-                "libprocessgroup",
-                "libstagefright_foundation",
-                "libsync",
-                "libui",
-                "libutils",
-                "libvulkan",
-                "libMiVideoFilter",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_graphicbuffersource_aidl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_graphicbuffersource_aidl.so",
-            ],
-            shared_libs: [
-                "graphicbuffersource-aidl-ndk",
-                "libbinder_ndk",
-                "libcutils",
-                "libgui",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_bufferqueue_helper",
-                "libutils",
-                "android.hardware.graphics.common-V6-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_surface_utils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_surface_utils.so",
-            ],
-            shared_libs: [
-                "libgui",
-                "liblog",
-                "libui",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -8111,7 +7816,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libhidparser",
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "android.hardware.sensors@2.0",
                 "android.hardware.sensors@2.0-ScopedWakelock",
                 "android.hardware.sensors@2.1",
@@ -11718,7 +11423,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "android.hardware.bluetooth.audio@2.0",
                 "android.hardware.bluetooth.audio@2.1",
                 "libbase",
@@ -11755,7 +11460,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "android.hardware.bluetooth.audio@2.0",
                 "android.hardware.bluetooth.audio@2.1",
                 "libbase",
@@ -11975,6 +11680,28 @@ cc_prebuilt_library_shared {
                 "libc++",
                 "libc",
                 "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libc++_shared",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libc++_shared.so",
+            ],
+            shared_libs: [
+                "libc",
                 "libdl",
             ],
         },
@@ -13147,7 +12874,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.media.bufferpool2-V2-ndk",
                 "android.hardware.media.c2-V1-ndk",
@@ -13161,8 +12888,8 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libnativewindow",
                 "libmediandk",
-                "libstagefright_aidl_bufferpool2_vendor",
-                "libstagefright_bufferpool@2.0.1_vendor",
+                "libstagefright_aidl_bufferpool2",
+                "libstagefright_bufferpool@2.0.1",
                 "libstagefright_foundation",
                 "libui",
                 "libutils",
@@ -13192,7 +12919,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.media.bufferpool2-V2-ndk",
                 "android.hardware.media.c2-V1-ndk",
@@ -13205,8 +12932,8 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libnativewindow",
-                "libstagefright_aidl_bufferpool2_vendor",
-                "libstagefright_bufferpool@2.0.1_vendor",
+                "libstagefright_aidl_bufferpool2",
+                "libstagefright_bufferpool@2.0.1",
                 "libui",
                 "libutils",
                 "libcodec2_hidl_plugin",
@@ -13240,7 +12967,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libstagefright_foundation",
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "libc++",
                 "libc",
                 "libm",
@@ -18853,7 +18580,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
+                "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk_vendor",
                 "libbinder_ndk",
                 "libmmosal_vendor",
                 "liblog",
@@ -27661,7 +27388,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libvibratorutils.so",
             ],
             shared_libs: [
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "liblog",
                 "libutils",
                 "server_configurable_flags",
@@ -28332,7 +28059,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libwfdsourcesession_proprietary",
                 "libcutils",
-                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
                 "libbinder_ndk",
                 "libwfdcommonutils_proprietary",
                 "libhidlbase",
@@ -36338,7 +36065,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
+    name: "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -36706,7 +36434,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -36746,7 +36475,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libutils",
                 "libcutils",
-                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
                 "libbinder_ndk",
                 "libwfdsessionmodule",
                 "liblog",
@@ -39521,6 +39250,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwfdavenhancements",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdavenhancements.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbinder",
+                "libutils",
+                "libgui",
+                "libui",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdclient",
     owner: "xiaomi",
     strip: {
@@ -39739,6 +39498,95 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwfdmmsrc_system",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
+            ],
+            shared_libs: [
+                "libgui_shim",
+                "libbinder",
+                "libmmosal",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libgui",
+                "libui",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libwfddisplayconfig",
+                "libmedia_helper",
+                "libaudioclient",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "libgralloctypes",
+                "android.hardware.graphics.mapper@4.0",
+                "libvndksupport",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdnative",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdnative.so",
+            ],
+            shared_libs: [
+                "libinput_shim",
+                "libbinder_shim",
+                "libandroid_runtime",
+                "libui",
+                "libinput",
+                "libnativehelper",
+                "libutils",
+                "liblog",
+                "libwfdclient",
+                "libhidlbase",
+                "libhidlmemory",
+                "libbinder",
+                "libgui",
+                "android.hidl.base@1.0",
+                "android.hidl.token@1.0-utils",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwfdrtsp",
     owner: "xiaomi",
     strip: {
@@ -39757,6 +39605,52 @@ cc_prebuilt_library_shared {
                 "libwfdcommonutils",
                 "libwfdconfigutils",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwfdservice",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libwfdservice.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libgui",
+                "libwfdsinksm",
+                "libmmosal",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libinput",
+                "libwfdmminterface",
+                "libmedia_helper",
+                "libaudioclient",
+                "libaudiofoundation",
+                "audioclient-types-aidl-cpp",
+                "android.media.audio.common.types-V4-cpp",
+                "libwfdmmsrc_system",
+                "libwfdavenhancements",
+                "libhidlbase",
+                "vendor.qti.hardware.wifidisplaysession@1.0",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "libbinder_ndk",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -43795,6 +43689,63 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.sigma_miracast_aidl-halimpl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast_aidl-halimpl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
+                "liblog",
+                "libbinder",
+                "libbase",
+                "libbinder_ndk",
+                "libmmosal",
+                "libmiracastsystem",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.slmadapter@1.0",
     owner: "xiaomi",
     strip: {
@@ -43946,6 +43897,32 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -46533,6 +46510,14 @@ android_app_import {
     },
     privileged: true,
     system_ext_specific: true,
+}
+
+dex_import {
+    name: "WfdCommon",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system/framework/WfdCommon.jar",
+    ],
 }
 
 prebuilt_etc_xml {
@@ -51321,7 +51306,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "libbase",
                 "libcodec2",
                 "libcodec2_hal_common",
@@ -51362,7 +51347,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "server_configurable_flags",
-                "libaconfig_storage_read_api_cc_vendor",
+                "libaconfig_storage_read_api_cc",
                 "libbase",
                 "libcodec2",
                 "libcodec2_hal_common",
@@ -54528,7 +54513,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl",
-                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+                "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor",
                 "libbinder_ndk",
                 "libutils",
                 "liblog",
@@ -54856,6 +54841,101 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "vendor.qti.qccsyshal_aidl-V1-ndk",
                 "vendor.qti.qccsyshal_aidl-halimpl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "sigma_miracasthalservice64",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/sigma_miracasthalservice64",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.sigma_miracast@1.0",
+                "vendor.qti.hardware.sigma_miracast@1.0-halimpl",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "sigma_miracasthalservice_aidl",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/sigma_miracasthalservice_aidl",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.sigma_miracast_aidl-V1-ndk",
+                "vendor.qti.hardware.sigma_miracast_aidl-halimpl",
+                "libutils",
+                "liblog",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "wfdservice64",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/wfdservice64",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder",
+                "libwfdservice",
+                "libmmosal",
+                "libwfdcommonutils",
+                "libwfdconfigutils",
+                "libhidlbase",
+                "libavservices_minijail",
                 "libc++",
                 "libc",
                 "libm",
@@ -55361,6 +55441,13 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+install_symlink {
+    name: "system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so",
+    system_ext_specific: true,
+    installed_location: "priv-app/WfdService/lib/arm64/libwfdnative.so",
+    symlink_target: "/system_ext/lib64/libwfdnative.so",
 }
 
 install_symlink {
