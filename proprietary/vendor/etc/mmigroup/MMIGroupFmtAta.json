@@ -38,12 +38,21 @@
 					"EnterSensorMode_MI_RetPass": "factoryAta mode 10",
 					"LSensorCalTest_MI": "settings put system screen_brightness_mode 0",
 					"LSensorCalTest_MI1_RetPass": "mifunctiontest setbrightness backlight 0",
-					"LSensorCalTest_Leeds_A_MI_LSensorCalTest_Leeds_A_MI_RetRange": {
+					"LSensorCalTest_Leeds_A_MI_LSensorCalTest_Leeds_A_MI_RetCustFunc": {
 						"cmd": "mifunctiontest sensortest Lux0",
-						"ret_pass_range": {
-							"min": "100",
-							"max": "400"
-						}
+                        "RetCustFunc": {
+                            "InputParam1_companyCmd": "cat /sys/class/mi_display/disp-DSI-0/panel_info",
+                            "InputParam2_huaxinString": "mdss_dsi_leeds_42_02_0a_vid",
+                            "InputParam3_huaxinmin": "100",
+                            "InputParam4_huaxinmax": "500",
+                            "InputParam5_xinliString": "mdss_dsi_leeds_43_02_0b_vid",
+                            "InputParam6_xinlimin": "100",
+                            "InputParam7_xinlimax": "550",
+                            "InputParam8_BOEString": "mdss_dsi_leeds_35_10_0c_vid",
+                            "InputParam9_BOEmin": "100",
+                            "InputParam10_BOEmax": "550",
+                            "ParseFuncName": "SensorCalTest_BeforeTest"
+                        }
 					},
 					"Sleep": "1000",
 					"SensorCali_RetPass": "mifunctiontest sensorcalibration Lux0",
@@ -104,15 +113,7 @@
                 "cmd_list": {
                     "Mkdir": "mkdir /mnt/vendor/persist/keytemp",
                     "CustCmdFunc_ReadTzprovision": {
-                        "InputParam1_keyCmd": "cardapp_client > sdcard/tmp_cardapp_keyinfo.txt &",
-                        "InputParam2_minDataLen": 4000,
-                        "InputParam3_splitChar": "#",
-                        "InputParam4_splitAmount": 7,
-                        "InputParam5_keyInfoPathFile": "/mnt/vendor/persist/keytemp/keyinfo.txt",
-                        "InputParam6_ItemName": "Bind-TZ",
-                        "InputParam7_PreconditionCmd": "",
-                        "InputParam8_CountryCode": "",
-                        "InputParam9_Delay": "8000"
+                        "InputParam1_keyCmd": "cardapp_client > sdcard/tmp_cardapp_keyinfo.txt &"
                     },
                     "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
                 },
@@ -123,6 +124,19 @@
             "showName": "ReadTzprovision2",
             "paramconfig": {
                 "cmd_list": {
+                    "CustCmdFunc_ReadTzprovision2": {
+                        "InputParam1_keyCmd": "cardapp_client > sdcard/tmp_cardapp_keyinfo.txt &",
+                        "InputParam2_minDataLen": 4000,
+                        "InputParam3_splitChar": "#",
+                        "InputParam4_splitAmount": 7,
+                        "InputParam5_keyInfoPathFile": "/mnt/vendor/persist/keytemp/keyinfo.txt",
+                        "InputParam6_ItemName": "Bind-TZ",
+                        "InputParam7_PreconditionCmd": "",
+                        "InputParam8_CountryCode": "",
+                        "InputParam9_Delay": "8000"
+                    },
+                    "Keytemp_Chown": "chown root:system /mnt/vendor/persist/keytemp",
+                    "Keytemp_Chmod": "chmod 755 /mnt/vendor/persist/keytemp",
                     "Bind-IFAA_RetCustFunc": {
                         "cmd": "key_client --prepare ifaa",
                         "RetCustFunc": {
@@ -179,6 +193,7 @@
             "paramconfig": {
                 "cmd_list": {
                     "EnterSensorMode_MI_RetPass": "factoryAta mode 10",
+                    "sleep": "1000",
                     "GyrSensorCalTest_RetPass": "mifunctiontest sensorcalibration Gyr",
                     "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
                  },
@@ -225,21 +240,6 @@
             }
         },
         {
-            "showName": "SIP_FrontTestDARK_ListDARK",
-            "paramconfig": {
-                "cmd_list": {
-                    "Set_Brightness_Zero_RetPass": "mifunctiontest setbrightness backlight 0",
-                    "CustCmdFunc_DARKTest": {
-                        "InputParam1_SIPName": "FrontTest",
-                        "InputParam2_ItemName": "DARK"
-                    },
-                    "Set_Brightness_High_RetPass": "mifunctiontest setbrightness backlight 1500",
-                    "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
-                },
-                "index": 20
-            }
-        }, 
-        {
             "showName": "SIP_FrontParseBLEMISH_ListBLEMISH",
             "paramconfig": {
                 "cmd_list": {
@@ -250,19 +250,6 @@
                     "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
                 },
                 "index": 21
-            }
-        },
-        {
-            "showName": "SIP_FrontParseDARK_ListDARK",
-            "paramconfig": {
-                "cmd_list": {
-                    "CustCmdFunc_DARKParse": {
-                        "InputParam1_SIPName": "FrontTest",
-                        "InputParam2_ItemName": "DARK"
-                    },
-                    "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
-                },
-                "index": 24
             }
         },
         {
@@ -418,21 +405,6 @@
             }
         },
         {
-            "showName": "SIP_RearWideTestDARK_ListDARK",
-            "paramconfig": {
-                "cmd_list": {
-                    "Set_Brightness_Zero_RetPass": "mifunctiontest setbrightness backlight 0",
-                    "CustCmdFunc_DARKTest": {
-                        "InputParam1_SIPName": "RearWideTest",
-                        "InputParam2_ItemName": "DARK"
-                    },
-                    "Set_Brightness_High_RetPass": "mifunctiontest setbrightness backlight 1500",
-                    "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
-                },
-                "index": 44
-            }
-        },
-        {
             "showName": "SIP_RearWideParseBLEMISH_ListBLEMISH",
             "paramconfig": {
                 "cmd_list": {
@@ -443,21 +415,6 @@
                     "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
                 },
                 "index": 45
-            }
-        },
-        {
-            "showName": "SIP_RearWideParseDARK_ListDARK",
-            "paramconfig": {
-                "cmd_list": {
-                    "Set_Brightness_Zero_RetPass": "mifunctiontest setbrightness backlight 0",
-                    "CustCmdFunc_DARKParse": {
-                        "InputParam1_SIPName": "RearWideTest",
-                        "InputParam2_ItemName": "DARK"
-                    },
-                    "Set_Brightness_High_RetPass": "mifunctiontest setbrightness backlight 1500",
-                    "Enter_FMTATA_Mode": "am start -n com.factory.mmigroup/.fmtata.AutoLineTest"
-                },
-                "index": 46
             }
         },
         {

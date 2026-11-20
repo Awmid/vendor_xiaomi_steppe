@@ -229,6 +229,18 @@
 			"testResult": "MMI2_1Tag",
 			"activity": "com.factory.mmigroup.MMIGroupQrMenu"
 		},
+		{			
+			"showName": "MMI2_2",
+			"itemConfig": "MMI2_2.json",
+			"mode": 22,
+			"isATA": false,
+			"showInMainUI": true,
+			"showIndex": 3,
+			"isBackGround": false,
+			"showTestResultInMainUI": true,
+			"testResult": "MMI2_2Tag",
+			"activity": "com.factory.mmigroup.MMIGroupQrMenu"
+		},
 		{
 			"showName": "FQC",
 			"itemConfig": "FQC.json",
@@ -257,16 +269,6 @@
 			"showInMainUI": false,
 			"showTestResultInMainUI": false,
 			"testResult": "MMIGroupFmtAtaTag",
-			"activity": "com.factory.mmigroup.fmtata.AutoLineTest"
-		},
-		{
-			"showName": "FMT_ATA2",
-			"itemConfig": "MMIGroupFmtAta2.json",
-			"mode": 22,
-			"isATA": true,
-			"showInMainUI": false,
-			"showTestResultInMainUI": false,
-			"testResult": "MMIGroupFmtAta2Tag",
 			"activity": "com.factory.mmigroup.fmtata.AutoLineTest"
 		},
 		{

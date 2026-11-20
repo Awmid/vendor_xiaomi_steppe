@@ -2269,7 +2269,7 @@
 				"support_udc_backlight": true,
 				"do_calibration": true,
 				"coef": {
-					"min": 400,
+					"min": 360,
 					"max": 2500
 				}
 			},

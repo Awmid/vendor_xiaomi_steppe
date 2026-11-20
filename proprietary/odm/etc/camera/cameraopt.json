@@ -29,20 +29,18 @@
             }
         ],
         "oom_4Gmem": {
-                "oom_level": "18432:0,23040:100,102400:200,125000:250,175000:800,256000:950"
+                "oom_level": "73728:0,92160:100,128000:200,340000:250,510000:900,645120:950"
             },
         "threshold_4Gmem": {
                 "skip_task": 2,
                 "skip_task_lower": 1,
                 "adj_threshold": 701,
-                "lowAdj_threshold": 101,
-                "lowerAdj_freeMem_threshold": 204800,
-                "cam_boost_threshold": 1024000,
-                "update_state_delay_ms": 5000,
-                "intercept_restart_time": 5000,
-                "3rdcam_boost_threshold": 1024000,
-                "3rd_skip_task_lower": 1,
-                "dynamic_interval": 5000
+                "lowAdj_threshold": 51,
+                "lowerAdj_freeMem_threshold": 102400,
+                "cam_boost_threshold": 1843200,
+                "3rdcam_boost_threshold": 1536000,
+                "3rd_skip_task_lower": 2,
+                "kill_tag": 63
             },
         "configs_4Gmem": [
             {
@@ -75,8 +73,7 @@
                 "name": "inhibit_app_list",
                 "config": [
                     "com.google.android.providers.media.module",
-                    "com.sohu.inputmethod.sogou.xiaomi",
-                    "com.google.android.inputmethod.latin"
+                    "com.sohu.inputmethod.sogou.xiaomi"
                 ]
             },
             {

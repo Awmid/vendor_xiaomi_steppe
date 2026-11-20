@@ -1,0 +1,34 @@
+{
+	"itemConfig": [{
+			"showName": "VersionInfo"
+		},
+		{
+			"showName": "SimCard_HotPlug"
+		},
+		{
+			"showName": "Sdcard_Intent"
+		},
+		{
+			"showName": "LCD",
+			"paramconfig": {
+				"lcd_pic": [
+					"01-LEEDS-W255;120;2047;null;0;2000",
+					"ThreeColors;120;2047;null;0;2000",
+					"07-LEEDS-GL0;120;2047;null;0;2000",
+					"08-LEEDS-crosstalk-1;120;2047;null;0;2000",
+					"11-LEEDS-sub1dot;120;2047;null;0;2000",
+					"14-LEEDS-Graybar;120;2047;null;0;2000"
+				]
+			}
+		},
+		{
+		    "showName": "TouchScreen"
+		},
+		{
+			"showName": "Sar"
+		},
+		{
+			"showName": "SIMCardTray"
+		}
+	]
+}

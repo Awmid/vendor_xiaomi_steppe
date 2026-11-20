@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    该配置文件的主要作用是将uniperf的hintid 转译到不同平台对应的hintid
+    HintConfig代表uniperf的信息
+        hintid属性
+        type属性
+    Plarform中代表各自平台的信息
+        target属性代表平台名，
+        hintid属性代表平台的hintid，
+        hinttype代表平台的hinttype,没有不加
+        timeout现在默认都是-1
+-->
+<BoostConfigs>
+
+    <!-- UniPerf Launch boost-->
+    <!-- Type="1", Main launch boost -->
+    <HintConfig hintid="0x00001081"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x00001081" timeout="-1" hinttype="1"/>
+        <Platform target="xring" hintid="1" timeout="-1" />
+        <Platform target="mtk" hintid="21" timeout="5000" />
+    </HintConfig>
+    <!-- Type="3", Main Game Launch Boost -->
+    <HintConfig hintid="0x00001081"  hinttype ="4" >
+        <Platform target="qcom" hintid="0x00001081" timeout="-1" hinttype="1" />
+        <Platform target="xring" hintid="4" timeout="-1" />
+        <Platform target="mtk" hintid="54" timeout="5000" />
+    </HintConfig>
+    <!-- Type="10", main launch boost of 0.6sec -->
+    <HintConfig hintid="0x00001081"  hinttype ="10" >
+        <Platform target="qcom" hintid="0x00001081" timeout="-1" hinttype="10" />
+        <Platform target="xring" hintid="5" timeout="-1" />
+        <Platform target="mtk" hintid="23" timeout="600" />
+    </HintConfig>
+    <!-- Type="103", attach launch (duration field carries pid, not real duration) -->
+    <HintConfig hintid="0x00001081"  hinttype ="103" >
+        <Platform target="qcom" hintid="0x00001081" timeout="-1" hinttype="103" />
+        <Platform target="xring" hintid="3" timeout="2000" />
+    </HintConfig>
+    <!-- Type="105", fast launch -->
+    <HintConfig hintid="0x00001081"  hinttype ="105" >
+        <Platform target="qcom" hintid="0x00001081" timeout="-1" hinttype="105" />
+        <Platform target="mtk" hintid="22" timeout="2000" />
+    </HintConfig>
+    <!-- Type="106", smart launch adaptive -->
+    <HintConfig hintid="0x00001081"  hinttype ="106" >
+        <Platform target="xring" hintid="11" timeout="-1" />
+    </HintConfig>
+    <!-- Type="107", early activity boost -->
+    <HintConfig hintid="0x00001081"  hinttype ="107" >
+        <Platform target="xring" hintid="6" timeout="-1" />
+    </HintConfig>
+
+    <!--Uniperf hot boost-->
+    <HintConfig hintid="0x00001082"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x00001082" timeout="-1" hinttype="1"/>
+        <Platform target="xring" hintid="36" timeout="-1" />
+        <Platform target="mtk" hintid="22" timeout="3000" />
+    </HintConfig>
+    <!--Uniperf Resume boost ?-->
+    <HintConfig hintid="0x00001082"  hinttype ="2" >
+        <Platform target="qcom" hintid="0x00001082" timeout="-1" hinttype="2"/>
+        <Platform target="xring" hintid="37" timeout="-1" />
+        <Platform target="mtk" hintid="23" timeout="400" />
+    </HintConfig>
+    <!--Uniperf warm boost-->
+    <HintConfig hintid="0x00001082"  hinttype ="3" >
+        <Platform target="qcom" hintid="0x00001082" timeout="-1" hinttype="3"/>
+        <Platform target="xring" hintid="31" timeout="-1" />
+    </HintConfig>
+
+    <!-- UniPerf Scroll boost-->
+    <!-- Type 1 Heavy Scrolls : Horizontal and Vertical -->
+    <HintConfig hintid="0x00001080"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x00001080" timeout="-1" hinttype="1" />
+        <Platform target="xring" hintid="43" timeout="-1" />
+        <Platform target="mtk" hintid="900" timeout="3000" />
+    </HintConfig>
+    <!-- Type 2 Medium Scrolls : Horizontal and Vertical 60 FPS -->
+    <HintConfig hintid="0x00001080"  hinttype ="2" >
+        <Platform target="qcom" hintid="0x00001080" timeout="-1" hinttype="2" />
+        <Platform target="xring" hintid="44" timeout="-1" />
+        <Platform target="mtk" hintid="900" timeout="3000" />
+    </HintConfig>
+    <!-- Type 3 Light Scrolls : Horizontal and Vertical 60 FPS -->
+    <HintConfig hintid="0x00001080"  hinttype ="4" >
+        <Platform target="qcom" hintid="0x00001080" timeout="-1" hinttype="4" />
+        <Platform target="xring" hintid="41" timeout="-1" />
+        <Platform target="mtk" hintid="900" timeout="3000" />
+    </HintConfig>
+    <!-- Drag boost -->
+    <HintConfig hintid="0x00001087"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x00001087" timeout="-1" hinttype="1" />
+        <Platform target="xring" hintid="45" timeout="-1" />
+        <Platform target="mtk" hintid="900" timeout="3000" />
+    </HintConfig>
+    <!-- UniPerf Scroll boost end -->
+
+    <!--Uniperf Touch Up boost-->
+    <HintConfig hintid="0x00001085"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x00001085" timeout="-1" hinttype="1"/>
+        <Platform target="xring" hintid="213" timeout="-1" />
+    </HintConfig>
+    <HintConfig hintid="0x00001085"  hinttype ="3" >
+        <Platform target="qcom" hintid="0x00001085" timeout="-1" hinttype="1"/>
+        <Platform target="xring" hintid="215" timeout="-1" />
+        <Platform target="mtk" hintid="911" timeout="1000" />
+    </HintConfig>
+    <HintConfig hintid="0x00001086"  hinttype ="1" >
+        <Platform target="xring" hintid="214" timeout="-1" />
+    </HintConfig>
+    <!--Uniperf TicketScenario boost-->
+    <HintConfig hintid="0x00001085"  hinttype ="2" >
+        <Platform target="qcom" hintid="0x00001085" timeout="-1" hinttype="2"/>
+        <Platform target="mtk" hintid="910" timeout="3000" />
+    </HintConfig>
+
+    <!--Uniperf SpeeUI Scene boost-->
+    <HintConfig hintid="0x000011A0"  hinttype ="1" >
+        <Platform target="qcom" hintid="0x000011A0" timeout="2000" hinttype="1"/>
+        <Platform target="xring" hintid="201" timeout="2000" />
+        <Platform target="mtk" hintid="1013" timeout="2000" />
+    </HintConfig>
+
+    <HintConfig hintid="0x000011A0"  hinttype ="2" >
+        <Platform target="qcom" hintid="0x000011A0" timeout="2000" hinttype="2"/>
+        <Platform target="xring" hintid="202" timeout="2000" />
+        <Platform target="mtk" hintid="912" timeout="2000" />
+    </HintConfig>
+
+    <HintConfig hintid="0x000011A0"  hinttype ="10" >
+        <Platform target="qcom" hintid="0x000011A0" timeout="2000" hinttype="10"/>
+        <Platform target="xring" hintid="210" timeout="2000" />
+    </HintConfig>
+
+    <HintConfig hintid="0x000011A0"  hinttype ="11" >
+        <Platform target="qcom" hintid="0x000011A0" timeout="2000" hinttype="11"/>
+        <Platform target="xring" hintid="211" timeout="2000" />
+        <Platform target="mtk" hintid="912" timeout="2000" />
+    </HintConfig>
+
+    <!-- Type="1010", Process Create No PPB -->
+    <HintConfig hintid="0x00001081" hinttype="1010">
+        <Platform target="mtk" hintid="1010" timeout="5000" />
+    </HintConfig>
+
+    <!-- Type="1012", Hot Launch No PPB -->
+    <HintConfig hintid="0x00001082" hinttype="1012">
+        <Platform target="mtk" hintid="1012" timeout="3000" />
+    </HintConfig>
+</BoostConfigs>

@@ -3,6 +3,7 @@
 		"step_timeout": "9000",
 		"acc_trigger_range": 0.8,
 		"RunType": 0,
-		"fail_continue_test": true
+		"fail_continue_test": true,
+		"Sfr_spatialFeq_Available": false
 	}
 }

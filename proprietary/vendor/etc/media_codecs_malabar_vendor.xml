@@ -142,6 +142,7 @@
             <Feature name="dynamic-color-aspects" />
             <Feature name="secure-playback" required="true" />
             <Limit name="concurrent-instances" max="3" />
+            <Limit name="performance-point-1280x720" value="60" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" >
@@ -290,7 +291,7 @@
             <Limit name="performance-point-1920x1088" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc">
-        <Alias name="OMX.qcom.video.encoder.hevc"/>
+            <Alias name="OMX.qcom.video.encoder.hevc"/>
             <Limit name="size" min="128x128" max="1920x1920" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />

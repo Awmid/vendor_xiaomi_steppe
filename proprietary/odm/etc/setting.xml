@@ -25,6 +25,7 @@
         <scenario id="11" defined="13 0 98 99 0 0 0 99 99 0 99" name="video" />
         <scenario id="12" defined="14 0 98 99 0 0 0 0 99 0 99" name="demo" />
         <scenario id="14" defined="15 97 98 99 98 0 0 0 99 0 99" name="videochatOrCamera" />
+        <scenario id="14" defined="15 97 98 98 98 0 0 0 99 0 99" name="videochatOrCamera" />
         <scenario id="15" defined="7 0 98 99 0 0 0 0 99 0 99" name="camera" />
         <scenario id="15" defined="0 1 98 99 98 0 0 0 99 0 99" name="camera" />
         <scenario id="16" defined="0 0 98 99 1 0 0 0 99 0 99" name="4K" />

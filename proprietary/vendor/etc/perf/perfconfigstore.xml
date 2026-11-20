@@ -115,8 +115,8 @@ ________________________________________________________________________________
                 <!--Configs for learning module based memory features-->
                 <Prop Name="vendor.iop.enable_speed" Value="false" /> <!--rename to perf-->
                 <Prop Name="ro.vendor.perf.enable.prekill"        Value="true"     />
-                <Prop Name="ro.vendor.perf.enable.procomp" Value="true"/>
-                <Prop Name="ro.vendor.perf.enable.prefapps" Value="true" />
+                <Prop Name="ro.vendor.perf.enable.procomp" Value="false"/>
+                <Prop Name="ro.vendor.perf.enable.prefapps" Value="false" />
                 <Prop Name="vendor.prekill_MIN_ADJ_to_Kill" Value="800"  />
                 <Prop Name="vendor.prekill_MAX_ADJ_to_Kill" Value="1000"  />
                 <Prop Name="vendor.memhal_MIN_ADJ_to_Kill"  Value="700" />
@@ -124,7 +124,7 @@ ________________________________________________________________________________
                 <Prop Name="vendor.memhal_MAX_KILL_MEMORY_KB" Value="1048576" />
                 <Prop Name="ro.vendor.perf.count.prefapps" Value="5" />
                 <Prop Name="ro.vendor.perf.count.prefapps" Value="false" Ram="4,6"/>
-                <Prop Name="ro.vendor.use_perf_hal_for_preferredapps" Value="true" />
+                <Prop Name="ro.vendor.use_perf_hal_for_preferredapps" Value="false" />
                 <Prop Name="vendor.prefapps.pkg_retention_mins" Value="28800" />
                 <Prop Name="vendor.prefapps.last_launch_threshold" Value="21600" />
                 <Prop Name="vendor.debug.enable.memperfd"         Value="true"     />

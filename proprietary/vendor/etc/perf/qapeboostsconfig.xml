@@ -328,7 +328,7 @@
             Id="0x1" Package="com.tencent.ig" Enable="true" Timeout="0" Target="malabar" Fps="60" TargetFps="50"
             Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
             0x40818100, 672000, 0x40818000, 825600,
-            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 1190400, 0x4080c000, 1785600" />
+            0x40808100, 806400, 0x4080c100, 1478400, 0x40808000, 1190400, 0x4080c000, 1785600, 0x5FC00000, 0x3f" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
@@ -448,7 +448,7 @@
         <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <Config
             Id="0x1" Package="com.dts.freefireth" Enable="true" Timeout="0" Target="malabar" Fps="60"
-            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1" />
+            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1, 0x5FC00000, 0x3f" />
         <!-- LOL Max 60 FPS Profile -->
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
@@ -458,14 +458,6 @@
         <Config
             Id="0x1" Package="com.tencent.lolm" Enable="true" Timeout="0" Target="malabar" Fps="60"
             Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1" />
-        <!-- com.garena.game.kgvn Max 60 FPS Profile -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
-        <Config
-            Id="0x1" Package="com.garena.game.kgvn" Enable="true" Timeout="0" Target="malabar" Fps="60"
-            Resources="0X43C18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1, 0x5FC00000, 0x3f" />
+
      </QapePerfBoost>
 </QapeBoostConfigs>

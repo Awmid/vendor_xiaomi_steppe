@@ -4,7 +4,7 @@
 <!-- Copyright(c) 2021 Morpho China,Inc.  -->
 
 <image_refiner>
-	<version   type="string" length="1">Param_V4.1.1_sample_mnfr_leeds_main_i_gl_default_bokeh_20260810</version>
+	<version   type="string" length="1">Param_V4.1.1_sample_mnfr_leeds_main_ii_gl_default_bokeh_20260603</version>
 	<camera_id type="int"    length="1">1</camera_id>
 	
 <params>
@@ -390,7 +390,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">1.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">1.0</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">1</noise_mode>
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>
 
 	<iso value="4800">	
@@ -433,7 +432,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">1.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">1</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">1</noise_mode>
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>
 
 	<iso value="5600">      
@@ -475,7 +473,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">0</noise_mode>
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>
 
 	<iso value="6400">
@@ -518,7 +515,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">0</noise_mode>
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>	
 
 	<iso value="9600"> 
@@ -560,8 +556,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">1</noise_mode>
-
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>	
 
 	<iso value="12800"> 
@@ -602,7 +596,6 @@
 			<darkspike_nr_level                    type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3.0</darkspike_nr_level>
 			<merge_darkspike_nr_level              type="double"     rang="[0.0,3.5]"       default="0.0"    length="1">3</merge_darkspike_nr_level>
 			<noise_mode                            type="int"        rang="[0,1]"           default="0"      length="1">1</noise_mode>
-			<brightness_diff_thres                 type="double"     rang="[0.0,10.0]"      default="3.5"    length="1">9</brightness_diff_thres>
 	</iso>	
 
 	<iso value="18000"> 

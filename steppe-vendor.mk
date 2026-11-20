@@ -6,7 +6,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/steppe
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/steppe/proprietary/odm/etc/MispeedDeviceConfig.json:$(TARGET_COPY_OUT_ODM)/etc/MispeedDeviceConfig.json \
+    vendor/xiaomi/steppe/proprietary/odm/etc/MispeedMapConfig.json:$(TARGET_COPY_OUT_ODM)/etc/MispeedMapConfig.json \
     vendor/xiaomi/steppe/proprietary/odm/etc/SVIConfig.xml:$(TARGET_COPY_OUT_ODM)/etc/SVIConfig.xml \
+    vendor/xiaomi/steppe/proprietary/odm/etc/UniperfHintMapsConfig.xml:$(TARGET_COPY_OUT_ODM)/etc/UniperfHintMapsConfig.xml \
     vendor/xiaomi/steppe/proprietary/odm/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_configuration_mi.xml \
     vendor/xiaomi/steppe/proprietary/odm/etc/audio_policy_engine_default_stream_volumes_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_default_stream_volumes_mi.xml \
     vendor/xiaomi/steppe/proprietary/odm/etc/audio_policy_engine_product_strategies_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_product_strategies_mi.xml \
@@ -29,10 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/android.hardware.weaver.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.weaver.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/mrm.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mrm.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.mtdservice-service.rc \
-    vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.aidl.tidaservice-service.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.idmanager.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.idmanager.rc \
-    vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.mediaeventgatherservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mediaeventgatherservice.rc \
-    vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca-service.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.miguardca.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.miguardca.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.mikeybag.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mikeybag.rc \
     vendor/xiaomi/steppe/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-service.rc \
@@ -681,7 +681,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/init/qspa_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qspa_vendor.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/secure_element-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_element-service-tms.rc \
@@ -715,10 +714,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.memory.pasrmanager-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.qspa-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspa-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
@@ -730,6 +727,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mimd2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mimd2.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys.core-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys.core-service.rc \
+    vendor/xiaomi/steppe/proprietary/vendor/etc/init/vendor.xiaomi.hardware.uniperf-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.uniperf-service.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/steppe/proprietary/vendor/etc/init/xtra-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/xtra-daemon.rc \
@@ -767,7 +765,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mdss_dsi_leeds_42_02_0a_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_leeds_42_02_0a_vid_mi.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mdss_dsi_leeds_43_02_0b_vid_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_leeds_43_02_0b_vid_mi.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
@@ -792,6 +789,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/FQC.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/FQC.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMI2.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMI2.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMI2_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMI2_1.json \
+    vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMI2_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMI2_2.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMIGroupASAutoTest.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMIGroupASAutoTest.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMIGroupAudioAta.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMIGroupAudioAta.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/mmigroup/MMIGroupFmt.json:$(TARGET_COPY_OUT_VENDOR)/etc/mmigroup/MMIGroupFmt.json \
@@ -904,7 +902,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql \
     vendor/xiaomi/steppe/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/qspa/nav_disabled.rc:$(TARGET_COPY_OUT_VENDOR)/etc/qspa/nav_disabled.rc \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/qspa_application_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qspa_application_packages.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/qvirtmgr-vndr.json:$(TARGET_COPY_OUT_VENDOR)/etc/qvirtmgr-vndr.json \
     vendor/xiaomi/steppe/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/xiaomi/steppe/proprietary/vendor/etc/res/images/default/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/default/charger/battery_fail.png \
@@ -912,10 +909,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/steppe/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm64.policy \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm.policy \
-    vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy \
     vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
     vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
     vendor/xiaomi/steppe/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
@@ -1115,11 +1108,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n15.bin
 
 PRODUCT_PACKAGES += \
-    libdolbyproxyandroid \
-    libdolbyui \
-    vendor.qti.diaghal-V1-ndk \
-    vendor.qti.hardware.data.connectionaidl-V1-ndk \
-    vendor.qti.hardware.fm-V1-ndk \
     7816-3-T1 \
     android.hardware.bluetooth.audio-impl \
     btaudio_offload_if \
@@ -1364,7 +1352,6 @@ PRODUCT_PACKAGES += \
     libCB \
     libCneAppJni \
     libCsecClient \
-    libEvrcSwCodec \
     libFaceUnlock \
     libFactoryHALCommon \
     libFileMux_proprietary \
@@ -1380,7 +1367,6 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libOpenCL_adreno \
     libQSEEComAPI \
-    libQcelp13SwCodec \
     libQshQmiIDL \
     libQshSession \
     libQtiRilLoadable \
@@ -1749,14 +1735,6 @@ PRODUCT_PACKAGES += \
     libq-perflog \
     libqape_oem_ext \
     libqasr \
-    libqc2audio_base \
-    libqc2audio_basecodec \
-    libqc2audio_core \
-    libqc2audio_hooks \
-    libqc2audio_hwaudiocodec \
-    libqc2audio_platform \
-    libqc2audio_swaudiocodec \
-    libqc2audio_utils \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
@@ -1969,6 +1947,11 @@ PRODUCT_PACKAGES += \
     libtruetone_vendor \
     libtrustedapploader \
     libtzdrmgenprov \
+    libuniperf_client_vendor \
+    libuniperf_config \
+    libuniperf_controller \
+    libuniperf_log \
+    libuniperf_utils \
     libvibratorutils \
     libvideomode_vendor \
     libvideooptfeature \
@@ -2102,7 +2085,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.mwqem@1.0_vendor \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0_vendor \
-    vendor.qti.diaghal-V1-ndk_vendor \
+    vendor.qti.diaghal-V1-ndk \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V8-ndk \
@@ -2129,7 +2112,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V2-ndk \
     vendor.qti.hardware.data.connection@1.0_vendor \
     vendor.qti.hardware.data.connection@1.1_vendor \
-    vendor.qti.hardware.data.connectionaidl-V1-ndk_vendor \
+    vendor.qti.hardware.data.connectionaidl-V1-ndk \
     vendor.qti.hardware.data.connectionfactory-V1-ndk_vendor \
     vendor.qti.hardware.data.dataactivity-V1-ndk_vendor \
     vendor.qti.hardware.data.dynamicdds@1.0_vendor \
@@ -2188,7 +2171,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmsslaidl-V2-ndk_vendor \
     vendor.qti.hardware.fingerprint@1.0_vendor \
-    vendor.qti.hardware.fm-V1-ndk_vendor \
+    vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.hexlp-V2-ndk \
     vendor.qti.hardware.iop@1.0 \
@@ -2206,7 +2189,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qdutils_disp@1.0_vendor \
     vendor.qti.hardware.qseecom-V1-ndk_vendor \
     vendor.qti.hardware.qseecom@1.0_vendor \
-    vendor.qti.hardware.qspa-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0_vendor \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0_vendor \
@@ -2273,7 +2255,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.wifi.supplicant-V1-ndk \
     vendor.qti.hardware.wifi.wifilearner@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk_vendor \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.hardware.wigig.netperftuner@1.0_vendor \
     vendor.qti.ims.callcapability@1.0_vendor \
@@ -2313,7 +2295,6 @@ PRODUCT_PACKAGES += \
     vendor.tms.tmsese_aidl-V1-ndk \
     vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
-    vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk \
     vendor.xiaomi.hardware.batteryantiaging-V1-ndk \
     vendor.xiaomi.hardware.blackbox-V2-ndk \
     vendor.xiaomi.hardware.cld_aidl-V1-ndk \
@@ -2328,6 +2309,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys.common-V3-ndk \
     vendor.xiaomi.hardware.misys.core-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
+    vendor.xiaomi.hardware.uniperf-V1-ndk \
     vendor.xiaomi.hardware.vsimapp-V1-ndk \
     vendor.xiaomi.hardware.wifi.supplicant-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
@@ -2372,7 +2354,6 @@ PRODUCT_PACKAGES += \
     libdpmframework \
     libmiracastsystem \
     libmmosal \
-    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libqcc_file_agent_sys \
@@ -2386,6 +2367,7 @@ PRODUCT_PACKAGES += \
     libwfdmmsink \
     libwfdmmsrc_system \
     libwfdnative \
+    libwfdparserlite \
     libwfdrtsp \
     libwfdservice \
     libwfdsinksm \
@@ -2451,6 +2433,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V11-ndk \
     vendor.qti.hardware.display.config-V12-ndk \
     vendor.qti.hardware.display.config-V13-ndk \
+    vendor.qti.hardware.display.config-V16-ndk \
     vendor.qti.hardware.display.config-V2-ndk \
     vendor.qti.hardware.display.config-V3-ndk \
     vendor.qti.hardware.display.config-V4-ndk \
@@ -2528,7 +2511,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.wifidisplaysession@1.0 \
-    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
     vendor.qti.hardware.wigig.supptunnel@1.0 \
     vendor.qti.ims.callcapability@1.0 \
@@ -2563,7 +2546,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdhal@1.2 \
-    vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
     vendor.xiaomi.hardware.displayfeature@1.0 \
@@ -2579,7 +2561,6 @@ PRODUCT_PACKAGES += \
     libhdrmode \
     libhistprocess \
     libidprovision \
-    libmfido \
     libmiBrightness \
     libmiSensorCtrl \
     libmiXmlParser \
@@ -2596,13 +2577,11 @@ PRODUCT_PACKAGES += \
     libsecid \
     libsre \
     libteeclientjni \
-    libtida \
     libtruetone \
     libvideomode \
     libvsim \
     libwvkeybox \
     vendor.xiaomi.hardware.idmanager-V1-ndk \
-    vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     vendor.xiaomi.hardware.miguardca-V1-ndk \
     vendor.xiaomi.hardware.mikeybag-impl \
     vendor.xiaomi.hardware.misauth-V1-ndk \
@@ -2619,11 +2598,9 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     TxPwrAdmin \
     PowerOffAlarm \
-    QtiTelephonyService \
     WfdService \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
     ImsRtpService-aidl.xml \
     Manifest_IAGM.xml \
     Manifest_IListenSoundModel.xml \
@@ -2649,7 +2626,6 @@ PRODUCT_PACKAGES += \
     bluetooth_hci.xml \
     boot-service.qti.xml \
     c2_manifest_vendor.xml \
-    c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
@@ -2705,13 +2681,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.memory.pasrmanager-service.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
-    vendor.qti.qspa-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.batteryantiaging.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.micharge.xml \
     vendor.xiaomi.hardware.misys.common.xml \
     vendor.xiaomi.hardware.misys.core.xml \
+    vendor.xiaomi.hardware.uniperf-service.xml \
     manifest_malabar.xml \
     vendor.qti.hardware.sigma_miracast.xml \
     vendor.qti.hardware.sigma_miracast_aidl.xml \
@@ -2719,13 +2695,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdsys.service.xml \
     android.hardware.weaver.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
-    manifest_vendor.xiaomi.hardware.aidl.tidaservice.xml \
-    manifest_vendor.xiaomi.hardware.mfidoca.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     manifest_vendor.xiaomi.hardware.vsimapp.xml \
     mrm.xml \
     vendor.xiaomi.hardware.idmanager.xml \
-    vendor.xiaomi.hardware.mediaeventgatherservice.xml \
     vendor.xiaomi.hardware.miguardca.xml \
     vendor.xiaomi.hardware.mikeybag.xml \
     vendor.xiaomi.hardware.mpayjoyca.xml \
@@ -2856,7 +2829,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.hardware.vibrator.service \
     vendor.qti.media.c2@1.0-service \
-    vendor.qti.media.c2audio@1.0-service \
     vendor.qti.memory.pasrmanager-service \
     vendor.qti.psiclient@1.0-service \
     vendor.xiaomi.hardware.batteryantiaging-service \
@@ -2865,6 +2837,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.micharge-service \
     vendor.xiaomi.hardware.mimd2 \
     vendor.xiaomi.hardware.misys.core-service \
+    vendor.xiaomi.hardware.uniperf-service \
     wpa_supplicant \
     hwinfo \
     hypsys_vendor \
@@ -2954,7 +2927,6 @@ PRODUCT_PACKAGES += \
     ubwcconvert \
     vendor.dpmd \
     vendor.qti.hardware.soter-provision \
-    vendor.qti.qspa-service \
     vendor.qti.qspmhal-service \
     vendor_cmd_tool \
     volta \
@@ -2975,9 +2947,7 @@ PRODUCT_PACKAGES += \
     sigma_miracasthalservice64 \
     sigma_miracasthalservice_aidl \
     wfdservice64 \
-    fidoca \
     android.hardware.weaver \
-    vendor.xiaomi.hardware.mediaeventgatherservice-service \
     vendor.xiaomi.sensor.citsensorservice.aidl \
     idmanager \
     miguardca \
@@ -2986,7 +2956,6 @@ PRODUCT_PACKAGES += \
     mpayjoyca \
     mrmd \
     mtd \
-    tidad \
     vendor.xiaomi.hardware.mikeybag-service \
     vsimd
 
@@ -2995,6 +2964,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon

@@ -120,7 +120,10 @@
 		},
 		{
 			"showName": "FM",
-			"action": "com.mmigroup.action.ThreeAppTest"
+			"action": "com.mmigroup.action.ThreeAppTest",
+			"paramconfig": {
+				"isSupportSystemFM":true
+			}
 		},
 		{
 			"showName": "fingerprint",
