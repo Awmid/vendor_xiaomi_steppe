@@ -1108,6 +1108,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/steppe/proprietary/vendor/lib64/rfs/dsp/bm2n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n15.bin
 
 PRODUCT_PACKAGES += \
+    libdolbyproxyandroid \
+    libdolbyui \
+    vendor.qti.diaghal-V1-ndk \
+    vendor.qti.hardware.data.connectionaidl-V1-ndk \
+    vendor.qti.hardware.fm-V1-ndk \
     7816-3-T1 \
     android.hardware.bluetooth.audio-impl \
     btaudio_offload_if \
@@ -2085,7 +2090,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.mwqem@1.0_vendor \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0_vendor \
-    vendor.qti.diaghal-V1-ndk \
+    vendor.qti.diaghal-V1-ndk_vendor \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V8-ndk \
@@ -2112,7 +2117,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V2-ndk \
     vendor.qti.hardware.data.connection@1.0_vendor \
     vendor.qti.hardware.data.connection@1.1_vendor \
-    vendor.qti.hardware.data.connectionaidl-V1-ndk \
+    vendor.qti.hardware.data.connectionaidl-V1-ndk_vendor \
     vendor.qti.hardware.data.connectionfactory-V1-ndk_vendor \
     vendor.qti.hardware.data.dataactivity-V1-ndk_vendor \
     vendor.qti.hardware.data.dynamicdds@1.0_vendor \
@@ -2171,7 +2176,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.embmsslaidl-V2-ndk_vendor \
     vendor.qti.hardware.fingerprint@1.0_vendor \
-    vendor.qti.hardware.fm-V1-ndk \
+    vendor.qti.hardware.fm-V1-ndk_vendor \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.hexlp-V2-ndk \
     vendor.qti.hardware.iop@1.0 \
@@ -2601,6 +2606,7 @@ PRODUCT_PACKAGES += \
     WfdService \
     ims \
     qcrilmsgtunnel \
+    WfdCommon \
     ImsRtpService-aidl.xml \
     Manifest_IAGM.xml \
     Manifest_IListenSoundModel.xml \
@@ -2964,3 +2970,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon

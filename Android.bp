@@ -15,6 +15,142 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdolbyproxyandroid",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libdolbyproxyandroid.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyui",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libdolbyui.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgralloctypes",
+                "libhidlbase",
+                "libsync",
+                "libutils",
+                "liblog",
+                "libvndksupport",
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.diaghal-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.connectionaidl-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.hardware.data.connectionaidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.qti.hardware.fm-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "7816-3-T1",
     owner: "xiaomi",
     strip: {
@@ -6751,7 +6887,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libbinder",
                 "android.hardware.bluetooth.audio-V3-ndk",
-                "vendor.qti.hardware.fm-V1-ndk",
+                "vendor.qti.hardware.fm-V1-ndk_vendor",
                 "vendor.qti.hardware.fm@1.0_vendor",
                 "libc++",
                 "libc",
@@ -7923,7 +8059,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libbinder_ndk",
                 "android.hardware.bluetooth@1.0-impl-qti",
-                "vendor.qti.hardware.fm-V1-ndk",
+                "vendor.qti.hardware.fm-V1-ndk_vendor",
                 "libqmi_cci",
                 "libqmi",
                 "libqmiservices",
@@ -21020,7 +21156,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.qti.hardware.data.iwlandata-V3-ndk",
-                "vendor.qti.hardware.data.connectionaidl-V1-ndk",
+                "vendor.qti.hardware.data.connectionaidl-V1-ndk_vendor",
                 "libqdpr",
                 "libdsi_netctrl",
                 "liblog",
@@ -31293,7 +31429,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal-V1-ndk",
+    name: "vendor.qti.diaghal-V1-ndk_vendor",
+    stem: "vendor.qti.diaghal-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -32063,7 +32200,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.connectionaidl-V1-ndk",
+    name: "vendor.qti.hardware.data.connectionaidl-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.data.connectionaidl-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -33721,7 +33859,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm-V1-ndk",
+    name: "vendor.qti.hardware.fm-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.fm-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -39175,7 +39314,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdmmsrc_system.so",
             ],
             shared_libs: [
-                "libgui_shim",
                 "libbinder",
                 "libmmosal",
                 "liblog",
@@ -39223,8 +39361,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdnative.so",
             ],
             shared_libs: [
-                "libinput_shim",
-                "libbinder_shim",
                 "libandroid_runtime",
                 "libui",
                 "libinput",
@@ -39336,7 +39472,7 @@ cc_prebuilt_library_shared {
                 "libaudiobase",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
@@ -46106,6 +46242,14 @@ android_app_import {
     system_ext_specific: true,
 }
 
+dex_import {
+    name: "WfdCommon",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system/framework/WfdCommon.jar",
+    ],
+}
+
 prebuilt_etc_xml {
     name: "ImsRtpService-aidl.xml",
     owner: "xiaomi",
@@ -48329,7 +48473,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libavservices_minijail",
                 "libbinder_ndk",
-                "vendor.qti.diaghal-V1-ndk",
+                "vendor.qti.diaghal-V1-ndk_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -49313,7 +49457,7 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "android.hardware.bluetooth-V1-ndk",
                 "android.hardware.bluetooth@1.0-impl-qti",
-                "vendor.qti.hardware.fm-V1-ndk",
+                "vendor.qti.hardware.fm-V1-ndk_vendor",
                 "android.hardware.bluetooth@aidl-impl-qti",
                 "vendor.qti.hardware.bttpi-V3-ndk",
                 "libqmi_cci",
